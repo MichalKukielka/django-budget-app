@@ -3,6 +3,9 @@
 {% block content %}
 
 <div class="container">
+  <br>
+  <a class="btn" href="{% url 'list' %}">Back to projects list</a>
+  <hr>
   <form action="" method="POST">
     {% csrf_token %}
     {{ form }}
